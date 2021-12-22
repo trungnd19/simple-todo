@@ -1,0 +1,36 @@
+<!-- <div class="container">
+  <form #todoForm="ngForm" (ngSubmit)="todoSubmit(todoForm.value); todoForm.resetForm()">
+    <div class="form-group">
+      <h1 class="text-center">Todo App</h1>
+      <div class="input-group-prepend">
+        <input type="text" #todo class="form-control" placeholder="Add Todo" name="todo" ngModel maxlength="300">
+        <span class="input-group-text" (click)="onAddButtonClicked(todo.value); todo.value='' ">
+          <i class="material-icons">add</i>
+        </span>
+      </div>
+      <div class="data">
+        <ul class="list-unstyled">
+          <li *ngFor="let item of todoArray" (click)="strikeThrough(item)">{{item}}<i class="material-icons" (click)="deleteItem(item)">delete</i></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+</div> -->
+
+<div class="container">
+  <form #todoForm="ngForm" (ngSubmit)="onPressEnterKey(todoForm.value); todoForm.resetForm()">
+    <div class="form-group">
+      <h1 class="text-center mt-3 mb-1">To do list</h1>
+      <p class="text-center mb-4"><i>A simple to do list that helps you organize your working day!</i></p>
+      <div class="input-group-prepend d-flex justify-content-center align-items-center">
+        <input type="text" class='form-control col-lg-4 col-sm-3' name="todo" placeholder="Add new" ngModel #todo maxlength="300">
+        <span class='input-group-text ml-1'><i class="material-icons" (click)="onAddButtonClicked(todo.value); todo.value ='' " >add</i></span>
+      </div>
+      <div class="data">
+        <ul class="d-flex flex-column justify-content-center align-items-center">
+          <li class="mt-4 col-lg-4 col-sm-1 col-md-3" *ngFor="let item of todoArray" (click)="onStrikeThrough(item)">{{item}}<i class="material-icons float-right" (click)="onDeleteButtonClicked(item)">delete</i></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+</div>

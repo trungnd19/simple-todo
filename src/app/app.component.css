@@ -1,0 +1,106 @@
+/* //The main reason this is used is because sometimes
+the browser will apply it's default margin/padding to elements,
+and in a case where you do not want there to be any margin or padding
+space around an element you will want to define that there is no margin or padding. */
+
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+/* body {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  max-width: 25em;
+  margin: 1em auto;
+  position: relative;
+  background: #f4f4f4;
+  padding: 2em 3em;
+}
+
+form h1{
+  font-family: "Raleway";
+  color:#F97300;
+}
+
+form .data li{
+  background: rgb(233, 224, 224);
+  border-left: 4px solid #F97300;
+  padding: 1em;
+  margin: 2em auto;
+  color: #666;
+  font-family: "Raleway";
+  word-break: break-all
+ }
+
+ form .input-group-text{
+  background: #F97300;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  padding: 1em 23px;
+  color: #fff;
+  position: absolute;
+  right: 13px;
+  top: 68px;
+  cursor: pointer;
+}
+
+form .data li i{
+  float: right;
+  color: #888;
+  cursor: pointer;
+}
+
+form .input-group-text i {
+  font-size: 2em;
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  border-left: #F97300 solid 4px;
+  list-style: none;
+  padding: 1em;
+  background-color: rgb(233, 224, 224);
+  color: #666;
+  word-break: break-all;
+  font-family: "Raleway";
+  font-weight: 800;
+}
+
+form .data li i{
+  color: #888;
+  cursor: pointer;
+}
+
+.input-group-prepend {
+  font-family: "Raleway";
+  color: #666;
+}
+
+h1 {
+  font-family: "Raleway";
+  color: #F97300;
+}
+
+.form-group > p {
+  font-family: "Raleway";
+  font-size: 15px;
+}
+
+
+form .input-group-text {
+  background: #F97300;
+  border-radius: 10%;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
